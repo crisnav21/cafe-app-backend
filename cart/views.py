@@ -9,7 +9,6 @@ from products.models import Product
 
 
 def get_demo_user():
-    # DEMO ONLY: use the first user or create one if none
     user, _ = User.objects.get_or_create(
         username="demo_user", defaults={"email": "demo@example.com"}
     )
